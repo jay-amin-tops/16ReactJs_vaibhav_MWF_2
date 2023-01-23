@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>First-Class Function: A programming language is said to have First-class functions if functions in that language
+        are treated like other variables. So the functions can be assigned to any other variable or passed as an
+        argument or can be returned by another function.
+        JavaScript treat function as a first-class-citizens. This means that functions are simply a value and are just
+        another type of object.</p>
+    <p>Higher-Order Function: A function that receives another function as an argument or that returns a new function or
+        both is called Higher-order function. Higher-order functions are only possible because of the First-class
+        function.</p>
+    <table width="50%" align="center">
+        <thead>
+            <tr>
+                <th>
+                    <p style="text-align:center">First-Order Function</p>
+                </th>
+                <th>
+                    <p style="text-align:center">Higher-Order Function</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Function is treated as a variable that can be assigned to any other variable or passed as an
+                    argument.</td>
+                <td>The function receives another function as an argument or returns First-order a new function or both.
+                </td>
+            </tr>
+            <tr>
+                <td>The “first-class” concept only has to do with functions in programming languages.</td>
+                <td>The “higher-order” concept can be applied to functions in general, like functions in the
+                    mathematical sense.</td>
+            </tr>
+            <tr>
+                <td>The presence of the First-class function implies the presence of a higher-order function.</td>
+                <td>The presence of a Higher-order function does not imply the presence of a First-order function.</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        const fun_name = function (params) {
+            console.log("called", params);
+
+            return function (anything) {
+                console.log("testing", anything);
+                console.log("closurefunction", params);
+            }
+        }
+        fun_name("testing")("something")
+    </script>
+</body>
+
+</html>

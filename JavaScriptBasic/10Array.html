@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Array Collection of multiple values in single variable</p>
+    <ul>
+        <li><strong>JavaScript arrays are resizable</strong> and <strong>can contain a mix of different <a
+                    href="/en-US/docs/Web/JavaScript/Data_structures">data types</a></strong>. (When those
+            characteristics are undesirable, use <a href="/en-US/docs/Web/JavaScript/Typed_arrays">typed arrays</a>
+            instead.)</li>
+        <li><strong>JavaScript arrays are not associative arrays</strong> and so, array elements cannot be accessed
+            using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective
+            string form) as indexes.</li>
+        <li><strong>JavaScript arrays are <a href="https://en.wikipedia.org/wiki/Zero-based_numbering" class="external"
+                    target="_blank">zero-indexed</a></strong>: the first element of an array is at index <code>0</code>,
+            the second is at index <code>1</code>, and so on — and the last element is at the value of the array's <a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length"><code>length</code></a> property
+            minus <code>1</code>.</li>
+        <li><strong>JavaScript <a href="#copy_an_array">array-copy operations</a> create <a
+                    href="/en-US/docs/Glossary/Shallow_copy">shallow copies</a></strong>. (All standard built-in copy
+            operations with <em>any</em> JavaScript objects create shallow copies, rather than <a
+                href="/en-US/docs/Glossary/Deep_copy">deep copies</a>).</li>
+    </ul>
+
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"><code>concat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"><code>copyWithin()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"><code>every()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>filter()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"><code>flat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"><code>flatMap()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"><code>forEach()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"><code>indexOf()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"><code>lastIndexOf()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"><code>map()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"><code>reduce()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight"><code>reduceRight()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"><code>reverse()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><code>slice()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"><code>some()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"><code>sort()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"><code>splice()</code></a></li>
+    </ul>
+
+
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries"><code>entries()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"><code>fill()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"><code>find()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"><code>findIndex()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast"><code>findLast()</code></a>
+        </li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex"><code>findLastIndex()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/group"><code>group()</code></a> <abbr
+                class="icon icon-experimental" title="Experimental. Expect behavior to change in the future.">
+                <span class="visually-hidden">Experimental</span>
+            </abbr></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/groupToMap"><code>groupToMap()</code></a>
+            <abbr class="icon icon-experimental" title="Experimental. Expect behavior to change in the future.">
+                <span class="visually-hidden">Experimental</span>
+            </abbr>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"><code>includes()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"><code>join()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys"><code>keys()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString"><code>toLocaleString()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values"><code>values()</code></a></li>
+    </ul>
+
+
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"><code>concat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>filter()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"><code>flat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"><code>flatMap()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"><code>map()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><code>slice()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"><code>splice()</code></a> (to
+            construct the array of removed elements that's returned)</li>
+    </ul>
+    <script>
+        arr = ["TOPS", 'a', 123, 456.234, true];
+        // array_object = [0=>"data",1=>{username:"testing"}]
+
+        for (let i = 0; i < 5; i++) {
+            // arr[i] *= 3;
+            console.log(arr[i]);
+        }
+        array_object = ["data", { username: "testing", lastname: "checking" }]
+        console.log(arr);
+        console.log(array_object);
+        console.log(array_object[0]);
+        console.log(array_object[1]);
+        console.log(array_object[1].username);
+        console.log(array_object[1].lastname);
+    </script>
+</body>
+
+</html>

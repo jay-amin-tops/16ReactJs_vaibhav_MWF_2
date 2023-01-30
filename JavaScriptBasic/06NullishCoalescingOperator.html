@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+        var user = "Test";
+
+        var res = user ?? "Anonymous"
+        console.log(res);
+        // (user) ? user:"anonymous"
+        // if (user) {
+        //     console.log(user);
+        // } else {
+        //     console.log("anonymous");
+        // }
+    </script>
+</body>
+
+</html>

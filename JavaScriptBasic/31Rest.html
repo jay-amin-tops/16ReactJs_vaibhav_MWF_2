@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        [a, b, ...rest] = [10, 20, 30, 40, 50];
+        console.log(a);
+        console.log(b);
+        console.log(rest);
+        addition(10,20,30,5,55)
+        // function addition(a,c,b,d) {
+        function addition(...argm) {
+            additionres= 0
+            for (let index = 0; index < argm.length; index++) {
+                additionres +=argm[index]; 
+            }
+            console.log(additionres);
+            // console.log(argm);
+            // argm.reduce((a, b) =>{ console.log("value of a = ",a);console.log("value of b = ",b); console.log( parseInt(a) + parseInt(b))})
+        }
+
+    </script>
+    
+</body>
+</html>

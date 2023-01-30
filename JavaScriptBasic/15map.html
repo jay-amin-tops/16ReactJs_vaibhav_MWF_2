@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    map(function (element, index, array) { /* … */ }, thisArg)
+
+    <ul>
+        <li><strong>function(currentValue, index, arr):</strong> It is a required parameter and it runs on each element
+            of the array. It contains three parameters which are listed below:<ul>
+                <li><strong>currentValue:</strong> It is a required parameter and it holds the value of the current
+                    element.</li>
+                <li><strong>index:</strong> It is an optional parameter and it holds the index of the current element.
+                </li>
+                <li><strong>arr:</strong> It is an optional parameter and it holds the array.</li>
+            </ul>
+        </li>
+        <li><strong>thisValue:</strong> It is an optional parameter and is used to hold the value passed to the
+            function.</li>
+    </ul>
+
+    <script>
+        var arr = [2, 5, 6, 3, 8, 9];
+        for (let index = 0; index < arr.length; index++) {
+            const element = arr[index];
+            console.log("with for loop : ", element);
+        }
+        // forEach never Return START
+        ret = arr.forEach(element => {
+            // console.log(element * 3);
+            console.log("with foreach loop : ", element);
+            return element * 3
+        });
+        console.log(ret);
+        // forEach never END
+
+        
+        // map will gives operated data as Return 
+        var newArr = arr.map(function (val, index) {
+            return { key: index, value: val * val };
+        })
+        console.log(newArr)</script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>The map.set() method is used to add key-value pairs to a Map object. It can also be used to update the value of
+        an existing key. Each value must have a unique key so that they get mapped correctly.</p>
+    <p> <b> Parameters:</b> This method accepts two parameters as mentioned above and described below:</p>
+    <p><b>Key:</b> This is the key of the item that has to be added or updated in the Map.</p>
+    <p><b>Value:</b> This is the value of the item that has to be added or updated in the Map.</p>
+    <p>
+        The examples below illustrate the set() method:
+    </p>
+
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/Map"><code>new Map()</code></a>
+            – creates the map.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set"><code>map.set(key, value)</code></a>
+            – stores the value by the key.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get"><code>map.get(key)</code></a>
+            – returns the value by the key, <code>undefined</code> if <code>key</code> doesn’t exist in map.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has"><code>map.has(key)</code></a>
+            – returns <code>true</code> if the <code>key</code> exists, <code>false</code> otherwise.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete"><code>map.delete(key)</code></a>
+            – removes the element (the key/value pair) by the key.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear"><code>map.clear()</code></a>
+            – removes everything from the map.</li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size"><code>map.size</code></a>
+            – returns the current element count.</li>
+    </ul>
+
+    <script>
+        let MapObjectAnything = new Map()
+        MapObjectAnything.set(1, "India")
+        console.log(MapObjectAnything.get(1));
+
+        console.log(MapObjectAnything);
+
+        let myMap = new Map();
+
+        // Adding key value pair with chaining
+        myMap.set(1, "Rohan").set(2, "Sohan").set(3, "Trojan");
+
+        // Getting the values back
+        console.log(myMap.get(1));
+        console.log(myMap.get(2));
+        console.log(myMap.get(3));
+    </script>
+</body>
+
+</html>

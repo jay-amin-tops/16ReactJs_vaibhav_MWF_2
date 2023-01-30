@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Iteration over Map</h2>
+    <p> For looping over a map, there are 3 methods: </p>
+    <ul>
+        <li><b> map.keys()</b> – returns an iterable for keys,</li>
+        <li><b> map.values()</b> – returns an iterable for values,</li>
+        <li><b> map.entries()</b> – returns an iterable for entries [key, value], it’s used by default in for..of.</li>
+    </ul>
+    <pre>
+    let recipeMap = new Map([
+    ['cucumber', 500],
+    ['tomatoes', 350],
+    ['onion', 50]
+    ]);
+
+    // iterate over keys (vegetables)
+    for (let vegetable of recipeMap.keys()) {
+    alert(vegetable); // cucumber, tomatoes, onion
+    }
+
+    // iterate over values (amounts)
+    for (let amount of recipeMap.values()) {
+    alert(amount); // 500, 350, 50
+    }
+
+    // iterate over [key, value] entries
+    for (let entry of recipeMap) { // the same as of recipeMap.entries()
+    alert(entry); // cucumber,500 (and so on)
+    }
+</pre>
+    <script>
+        let recipeMap = new Map([
+            ['cucumber', 500],
+            ['tomatoes', 350],
+            ['onion', 50]
+        ]);
+
+        // iterate over keys (vegetables)
+        for (let vegetable of recipeMap.keys()) {
+            console.log(vegetable); // cucumber, tomatoes, onion
+        }
+
+        // iterate over values (amounts)
+        for (let amount of recipeMap.values()) {
+            console.log(amount); // 500, 350, 50
+        }
+
+        // iterate over [key, value] entries
+        for (let entry of recipeMap) { // the same as of recipeMap.entries()
+            console.log(entry); // cucumber,500 (and so on)
+        }
+    </script>
+
+</body>
+
+</html>

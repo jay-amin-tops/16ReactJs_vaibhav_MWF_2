@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <PRE>The optional chaining ?. syntax has three forms:
+
+        obj?.prop – returns obj.prop if obj exists, otherwise undefined.
+        obj?.[prop] – returns obj[prop] if obj exists, otherwise undefined.
+        obj.method?.() – calls obj.method() if obj.method exists, otherwise returns undefined.
+        As we can see, all of them are straightforward and simple to use. The ?. checks the left part for null/undefined and allows the evaluation to proceed if it’s not so.
+        
+        A chain of ?. allows to safely access nested properties.
+        
+        Still, we should apply ?. carefully, only where it’s acceptable, according to our code logic, that the left part doesn’t exist. So that it won’t hide programming errors from us, if they occur.</PRE>
+    <h2></h2>
+    <pre>
+            In JavaScript short-circuiting, an expression is evaluated from left to right until it is confirmed that the result of the remaining conditions is not going to affect the already evaluated result. If the result is clear even before the complete evaluation of the expression, it short circuits and the result will be returned. Short circuit evaluation avoids unnecessary work and leads to efficient processing. 
+
+            AND(&&) short circuit: In the case of AND, the expression is evaluated until we get one false result because the result will always be false, independent of the further conditions. If there is an expression with &&(logical AND), and the first operand itself is false, then a short circuit occurs, the further expression is not evaluated and false is returned.
+
+            Example: Below is an example of the Short circuiting operators.
+        </pre>
+    <script>
+        function gfg() {
+            // AND short circuit
+            console.log(false && true)
+            console.log(true && true)
+            // OR short circuit
+            console.log(true || false)
+            console.log(false || true)
+        }
+        gfg();
+
+    </script>
+</body>
+
+</html>
